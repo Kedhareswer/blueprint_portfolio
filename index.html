@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedhareswer Naidu - AI/ML Engineer | Blueprint Portfolio</title>
+    <meta name="description" content="AI/ML Engineer and Data Analyst specializing in deep learning, computer vision, and innovative solutions">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="system-logo">KEDHARESWER.NAIDU</div>
+            <div class="loading-text">INITIALIZING SYSTEM...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-status">Loading portfolio components...</div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Blueprint Grid Background -->
+    <div class="blueprint-grid"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav-blueprint">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">KEDHARESWER.NAIDU</span>
+                <span class="logo-version">v2.1</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#overview" class="nav-link" data-section="01">OVERVIEW</a></li>
+                <li><a href="#specifications" class="nav-link" data-section="02">SPECS</a></li>
+                <li><a href="#projects" class="nav-link" data-section="03">PROJECTS</a></li>
+                <li><a href="#experience" class="nav-link" data-section="04">EXPERIENCE</a></li>
+                <li><a href="#contact" class="nav-link" data-section="05">CONTACT</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="overview" class="hero-blueprint">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-header">
+                    <div class="section-label">
+                        <span class="section-number">01</span>
+                        <span class="section-title">SYSTEM OVERVIEW</span>
+                    </div>
+                    <div class="blueprint-line horizontal"></div>
+                </div>
+                
+                <div class="hero-main">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="title-line">MARLAKUNTA</span>
+                            <span class="title-line">KEDHARESWER NAIDU</span>
+                        </h1>
+                        <div class="hero-subtitle">
+                            <span class="role-label">ROLE:</span>
+                            <span class="role-value" id="dynamicRole">AI/ML ENGINEER & DATA ANALYST</span>
+                        </div>
+                        <div class="hero-description">
+                            <p>Specialized in developing intelligent solutions through advanced machine learning algorithms, deep learning architectures, and data-driven insights. Expertise in transforming complex datasets into actionable intelligence.</p>
+                        </div>
+                        
+                        <div class="system-status-panel">
+                            <div class="status-item">
+                                <span class="status-label">LOCATION:</span>
+                                <span class="status-value">INDIA</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-label">STATUS:</span>
+                                <span class="status-value status-active">AVAILABLE</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-label">EXPERIENCE:</span>
+                                <span class="status-value">2+ YEARS</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-label">UPTIME:</span>
+                                <span class="status-value" id="uptime">00:00:00</span>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-label">LAST UPDATED:</span>
+                                <span class="status-value" id="lastUpdated">JAN 2025</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn-blueprint primary">VIEW PROJECTS</a>
+                            <a href="#contact" class="btn-blueprint secondary">INITIATE CONTACT</a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-diagram">
+                        <div class="profile-schematic">
+                            <div class="profile-frame">
+                                <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" alt="Kedhareswer Naidu" class="profile-image">
+                                <div class="frame-corners">
+                                    <div class="corner top-left"></div>
+                                    <div class="corner top-right"></div>
+                                    <div class="corner bottom-left"></div>
+                                    <div class="corner bottom-right"></div>
+                                </div>
+                            </div>
+                            <div class="diagram-annotations">
+                                <div class="annotation top-left">
+                                    <div class="annotation-line"></div>
+                                    <span class="annotation-text">AI/ML SPECIALIST</span>
+                                </div>
+                                <div class="annotation top-right">
+                                    <div class="annotation-line"></div>
+                                    <span class="annotation-text">DATA ANALYST</span>
+                                </div>
+                                <div class="annotation bottom-left">
+                                    <div class="annotation-line"></div>
+                                    <span class="annotation-text">PYTHON EXPERT</span>
+                                </div>
+                                <div class="annotation bottom-right">
+                                    <div class="annotation-line"></div>
+                                    <span class="annotation-text">DEEP LEARNING</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section id="specifications" class="specs-blueprint">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="section-number">02</span>
+                    <span class="section-title">TECHNICAL SPECIFICATIONS</span>
+                </div>
+                <div class="blueprint-line horizontal"></div>
+            </div>
+            
+            <div class="skills-matrix" id="skillsMatrix">
+                <div class="matrix-connections"></div>
+                
+                <div class="spec-category" data-category="languages">
+                    <h3 class="category-title">PROGRAMMING LANGUAGES</h3>
+                    <div class="spec-items">
+                        <div class="skill-item" data-skill="python" data-proficiency="90">
+                            <span class="skill-name">PYTHON</span>
+                            <div class="skill-proficiency">
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill"></div>
+                                </div>
+                                <span class="proficiency-value">90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="html-css" data-proficiency="85">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-proficiency">
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill"></div>
+                                </div>
+                                <span class="proficiency-value">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="sql" data-proficiency="80">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-proficiency">
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill"></div>
+                                </div>
+                                <span class="proficiency-value">80%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="javascript" data-proficiency="75">
+                            <span class="skill-name">JAVASCRIPT</span>
+                            <div class="skill-proficiency">
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill"></div>
+                                </div>
+                                <span class="proficiency-value">75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="spec-category" data-category="frameworks">
+                    <h3 class="category-title">AI/ML FRAMEWORKS</h3>
+                    <div class="spec-items">
+                        <div class="skill-item" data-skill="tensorflow" data-proficiency="88">
+                            <span class="skill-name">TENSORFLOW</span>
+                            <div class="skill-proficiency">
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill"></div>
+                                </div>
+                                <span class="proficiency-value">88%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="ml" data-proficiency="85">
+                            <span class="skill-name">MACHINE LEARNING</span>
+                            <div class="skill-proficiency">
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill"></div>
+                                </div>
+                                <span class="proficiency-value">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="dl" data-proficiency="82">
+                            <span class="skill-name">DEEP LEARNING</span>
+                            <div class="skill-proficiency">
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill"></div>
+                                </div>
+                                <span class="proficiency-value">82%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="cv" data-proficiency="80">
+                            <span class="skill-name">COMPUTER VISION</span>
+                            <div class="skill-proficiency">
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill"></div>
+                                </div>
+                                <span class="proficiency-value">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="spec-category" data-category="tools">
+                    <h3 class="category-title">TOOLS & PLATFORMS</h3>
+                    <div class="spec-items">
+                        <div class="skill-item" data-skill="mysql" data-proficiency="85">
+                            <span class="skill-name">MYSQL</span>
+                            <div class="skill-proficiency">
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill"></div>
+                                </div>
+                                <span class="proficiency-value">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="tableau" data-proficiency="78">
+                            <span class="skill-name">TABLEAU</span>
+                            <div class="skill-proficiency">
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill"></div>
+                                </div>
+                                <span class="proficiency-value">78%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="powerbi" data-proficiency="80">
+                            <span class="skill-name">POWER BI</span>
+                            <div class="skill-proficiency">
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill"></div>
+                                </div>
+                                <span class="proficiency-value">80%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="colab" data-proficiency="90">
+                            <span class="skill-name">GOOGLE COLAB</span>
+                            <div class="skill-proficiency">
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill"></div>
+                                </div>
+                                <span class="proficiency-value">90%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="kaggle" data-proficiency="85">
+                            <span class="skill-name">KAGGLE</span>
+                            <div class="skill-proficiency">
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill"></div>
+                                </div>
+                                <span class="proficiency-value">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="spec-category" data-category="ai-tools">
+                    <h3 class="category-title">AI DEVELOPMENT TOOLS</h3>
+                    <div class="spec-items">
+                        <div class="skill-item" data-skill="cursor" data-proficiency="92">
+                            <span class="skill-name">CURSOR</span>
+                            <div class="skill-proficiency">
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill"></div>
+                                </div>
+                                <span class="proficiency-value">92%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="chatgpt" data-proficiency="88">
+                            <span class="skill-name">CHATGPT</span>
+                            <div class="skill-proficiency">
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill"></div>
+                                </div>
+                                <span class="proficiency-value">88%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="claude" data-proficiency="85">
+                            <span class="skill-name">CLAUDE</span>
+                            <div class="skill-proficiency">
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill"></div>
+                                </div>
+                                <span class="proficiency-value">85%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="firebase" data-proficiency="75">
+                            <span class="skill-name">FIREBASE STUDIO</span>
+                            <div class="skill-proficiency">
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill"></div>
+                                </div>
+                                <span class="proficiency-value">75%</span>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="windsurf" data-proficiency="80">
+                            <span class="skill-name">WINDSURF</span>
+                            <div class="skill-proficiency">
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill"></div>
+                                </div>
+                                <span class="proficiency-value">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-specs">
+                <div class="contact-item">
+                    <span class="contact-label">EMAIL:</span>
+                    <span class="contact-value">kedhareswer.12110626@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">PHONE:</span>
+                    <span class="contact-value">+91-9398911432</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">LINKEDIN:</span>
+                    <span class="contact-value">linkedin.com/in/kedhareswernaidu</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">GITHUB:</span>
+                    <span class="contact-value">github.com/Kedhareswer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-blueprint">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="section-number">03</span>
+                    <span class="section-title">PROJECT SCHEMATICS</span>
+                </div>
+                <div class="blueprint-line horizontal"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-schematic" data-skills="tensorflow,python,dl,cv">
+                    <div class="project-thumbnail">
+                        <div class="schematic-diagram">
+                            <div class="diagram-node input">INPUT</div>
+                            <div class="diagram-connection"></div>
+                            <div class="diagram-node process">CNN</div>
+                            <div class="diagram-connection"></div>
+                            <div class="diagram-node output">OUTPUT</div>
+                        </div>
+                    </div>
+                    <div class="project-header">
+                        <h3 class="project-title">QUANTUMPDF CHATAPP</h3>
+                        <div class="project-status">DEPLOYED</div>
+                    </div>
+                    <div class="project-timeline">
+                        <span class="timeline-label">TIMELINE:</span>
+                        <span class="timeline-value">FEB 2025 - JUN 2025</span>
+                    </div>
+                    
+                    <div class="project-description">
+                        <p>Advanced deep learning model utilizing CUHK Face Sketch Database, achieving 85% quality enhancement through CNN architecture in TensorFlow. Integrated GANs and Autoencoders for 90% accuracy optimization.</p>
+                    </div>
+                    
+                    <div class="project-specs">
+                        <div class="tech-tag">TENSORFLOW</div>
+                        <div class="tech-tag">CNN</div>
+                        <div class="tech-tag">GANS</div>
+                        <div class="tech-tag">AUTOENCODERS</div>
+                    </div>
+                    
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-label">ACCURACY:</span>
+                            <span class="metric-value">90%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">ENHANCEMENT:</span>
+                            <span class="metric-value">85%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">SPEED IMPROVEMENT:</span>
+                            <span class="metric-value">30%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/Kedhareswer/QuantumPDF_ChatApp" target="_blank" class="project-link">
+                            <span class="link-label">REPOSITORY</span>
+                        </a>
+                        <a href="https://quantumn-pdf-chatapp.netlify.app/" target="_blank" class="project-link">
+                            <span class="link-label">LIVE DEMO</span>
+                        </a>
+                    </div>
+                    
+                    <button class="view-details-btn" onclick="openProjectModal('quantum')">VIEW SPECIFICATIONS</button>
+                </div>
+                
+                <div class="project-schematic" data-skills="python,cv,ml,tensorflow">
+                    <div class="project-thumbnail">
+                        <div class="schematic-diagram">
+                            <div class="diagram-node input">ENDOSCOPY</div>
+                            <div class="diagram-connection"></div>
+                            <div class="diagram-node process">U-NET</div>
+                            <div class="diagram-connection"></div>
+                            <div class="diagram-node output">ENHANCED</div>
+                        </div>
+                    </div>
+                    <div class="project-header">
+                        <h3 class="project-title">ENDOSCOPIC IMAGE ENHANCEMENT</h3>
+                        <div class="project-status">COMPLETED</div>
+                    </div>
+                    <div class="project-timeline">
+                        <span class="timeline-label">TIMELINE:</span>
+                        <span class="timeline-value">JAN 2025 - MAY 2025</span>
+                    </div>
+                    
+                    <div class="project-description">
+                        <p>Engineered deep learning pipeline for enhancing low-resolution endoscopic imagery using super-resolution, denoising, and segmentation. Employed U-Net architecture for medical-grade quality assurance.</p>
+                    </div>
+                    
+                    <div class="project-specs">
+                        <div class="tech-tag">U-NET</div>
+                        <div class="tech-tag">SUPER-RESOLUTION</div>
+                        <div class="tech-tag">SEGMENTATION</div>
+                        <div class="tech-tag">MEDICAL AI</div>
+                    </div>
+                    
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-label">PSNR:</span>
+                            <span class="metric-value">IMPROVED</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">SSIM:</span>
+                            <span class="metric-value">ENHANCED</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">CLARITY:</span>
+                            <span class="metric-value">SIGNIFICANT</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/Kedhareswer/Endoscopy-Image-Enhancement" target="_blank" class="project-link">
+                            <span class="link-label">REPOSITORY</span>
+                        </a>
+                    </div>
+                    
+                    <button class="view-details-btn" onclick="openProjectModal('endoscopy')">VIEW SPECIFICATIONS</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-blueprint">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="section-number">04</span>
+                    <span class="section-title">OPERATIONAL HISTORY</span>
+                </div>
+                <div class="blueprint-line horizontal"></div>
+            </div>
+            
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <h3 class="company-name">OUTLIER.AI</h3>
+                            <div class="position-title">AI EVALUATOR & TRAINER</div>
+                            <div class="employment-period">NOV 2024 - JAN 2025</div>
+                        </div>
+                        <div class="experience-description">
+                            <ul class="task-list">
+                                <li>Contributed to training and improvement of generative AI models by evaluating mathematical content</li>
+                                <li>Assessed factuality, relevance, and quality of AI-generated text within mathematics domain</li>
+                                <li>Crafted and answered subject-specific questions to enhance AI output accuracy</li>
+                            </ul>
+                        </div>
+                        <div class="experience-specs">
+                            <div class="spec-tag">AI EVALUATION</div>
+                            <div class="spec-tag">MODEL TRAINING</div>
+                            <div class="spec-tag">MATHEMATICS</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <h3 class="company-name">PSYLIQ</h3>
+                            <div class="position-title">DATA ANALYST INTERN</div>
+                            <div class="employment-period">JAN 2024 - FEB 2024</div>
+                        </div>
+                        <div class="experience-description">
+                            <ul class="task-list">
+                                <li>Processed and analyzed HR data, implementing data cleaning and storage protocols</li>
+                                <li>Created compelling visualizations using MySQL, Python, and Power BI</li>
+                                <li>Improved data comprehension by 25% through enhanced visualization techniques</li>
+                            </ul>
+                        </div>
+                        <div class="experience-specs">
+                            <div class="spec-tag">DATA ANALYSIS</div>
+                            <div class="spec-tag">POWER BI</div>
+                            <div class="spec-tag">PYTHON</div>
+                            <div class="spec-tag">MYSQL</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certifications -->
+            <div class="certifications-section">
+                <h3 class="subsection-title">CERTIFICATIONS & CREDENTIALS</h3>
+                <div class="certifications-grid">
+                    <div class="cert-item">
+                        <div class="cert-badge">✓</div>
+                        <div class="cert-title">NEO4J CERTIFIED PROFESSIONAL</div>
+                        <div class="cert-issuer">NEO4J</div>
+                        <div class="cert-date">JULY 2025</div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-badge">✓</div>
+                        <div class="cert-title">PYTHON FOR DATA SCIENCE</div>
+                        <div class="cert-issuer">INFOSYS</div>
+                        <div class="cert-date">MAY 2025</div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-badge">✓</div>
+                        <div class="cert-title">AWS APAC SOLUTIONS ARCHITECTURE</div>
+                        <div class="cert-issuer">FORAGE</div>
+                        <div class="cert-date">DEC 2024</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Education -->
+            <div class="education-section">
+                <h3 class="subsection-title">EDUCATIONAL FOUNDATION</h3>
+                <div class="education-item">
+                    <div class="education-header">
+                        <h4 class="degree-title">BACHELOR OF TECHNOLOGY</h4>
+                        <div class="institution">LOVELY PROFESSIONAL UNIVERSITY</div>
+                        <div class="education-period">SEP 2021 - JUL 2025</div>
+                    </div>
+                    <div class="education-details">
+                        <div class="specialization">COMPUTER SCIENCE & ENGINEERING - DATA SCIENCE (AI & ML)</div>
+                        <div class="gpa">CGPA: 7.71</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-blueprint">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">
+                    <span class="section-number">05</span>
+                    <span class="section-title">COMMUNICATION INTERFACE</span>
+                </div>
+                <div class="blueprint-line horizontal"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">INITIATE CONNECTION</h3>
+                    <p class="contact-description">
+                        Available for collaboration on AI/ML projects, data analysis initiatives, and innovative technology solutions. Open to discussing opportunities in machine learning, deep learning, and data-driven applications.
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:kedhareswer.12110626@gmail.com" class="contact-method">
+                            <span class="method-label">EMAIL</span>
+                            <span class="method-value">kedhareswer.12110626@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kedhareswernaidu" target="_blank" class="contact-method">
+                            <span class="method-label">LINKEDIN</span>
+                            <span class="method-value">linkedin.com/in/kedhareswernaidu</span>
+                        </a>
+                        <a href="https://github.com/Kedhareswer" target="_blank" class="contact-method">
+                            <span class="method-label">GITHUB</span>
+                            <span class="method-value">github.com/Kedhareswer</span>
+                        </a>
+                        <div class="contact-method">
+                            <span class="method-label">PHONE</span>
+                            <span class="method-value">+91-9398911432</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">NAME</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                            <div class="form-validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">EMAIL</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                            <div class="form-validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">SUBJECT</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                            <div class="form-validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">MESSAGE</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                            <div class="form-validation"></div>
+                        </div>
+                        <button type="submit" class="btn-blueprint primary">
+                            <span class="btn-text">TRANSMIT MESSAGE</span>
+                            <div class="transmission-animation"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-blueprint">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <span class="footer-text">© 2025 KEDHARESWER NAIDU. ALL SYSTEMS OPERATIONAL.</span>
+                </div>
+                <div class="footer-version">
+                    <span class="version-text">VERSION 2.1.0</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">PROJECT SPECIFICATIONS</h2>
+                <button class="modal-close" onclick="closeProjectModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be dynamically inserted -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
