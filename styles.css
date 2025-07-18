@@ -1223,7 +1223,7 @@ body {
 
 .contact-content {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: 1fr 1fr;
     gap: var(--spacing-3xl);
 }
 
@@ -1241,86 +1241,27 @@ body {
     line-height: 1.7;
 }
 
-/* Availability Status */
-.availability-status {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    margin-bottom: var(--spacing-xl);
-    padding: var(--spacing-sm) var(--spacing-md);
-    border: 1px solid var(--blueprint-success);
-    background: rgba(74, 222, 128, 0.1);
-}
-
-.status-indicator {
-    width: 8px;
-    height: 8px;
-    background: var(--blueprint-success);
-    border-radius: 50%;
-    animation: statusPulse 2s ease-in-out infinite;
-}
-
-.availability-status .status-text {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    color: var(--blueprint-success);
-    letter-spacing: 0.05em;
-}
-
 .contact-methods {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-md);
 }
 
 .contact-method {
     display: flex;
-    align-items: center;
-    gap: var(--spacing-md);
+    flex-direction: column;
+    gap: var(--spacing-xs);
     padding: var(--spacing-md);
     border: 1px solid var(--blueprint-line);
     background: rgba(26, 35, 50, 0.1);
     text-decoration: none;
     transition: var(--transition-normal);
-    position: relative;
-    overflow: hidden;
 }
 
 .contact-method:hover {
     border-color: var(--blueprint-accent);
-    background: rgba(0, 212, 255, 0.05);
+    background: rgba(26, 35, 50, 0.2);
     transform: translateX(5px);
-    box-shadow: 0 5px 15px rgba(0, 212, 255, 0.1);
-}
-
-.contact-method::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 3px;
-    height: 100%;
-    background: var(--blueprint-accent);
-    transform: scaleY(0);
-    transition: transform 0.3s ease;
-}
-
-.contact-method:hover::before {
-    transform: scaleY(1);
-}
-
-.method-icon {
-    font-size: 1.2rem;
-    color: var(--blueprint-accent);
-    min-width: 30px;
-    text-align: center;
-    filter: grayscale(1) brightness(1.2);
-}
-
-.contact-method:hover .method-icon {
-    filter: none;
-    transform: scale(1.1);
-    transition: all 0.3s ease;
 }
 
 .method-label {
@@ -1328,108 +1269,15 @@ body {
     font-size: 0.75rem;
     color: var(--blueprint-text-secondary);
     letter-spacing: 0.05em;
-    min-width: 80px;
 }
 
 .method-value {
     font-family: var(--font-mono);
     font-size: 0.85rem;
     color: var(--blueprint-text);
-    flex: 1;
-}
-
-/* Response Time Section */
-.response-time {
-    margin-top: var(--spacing-xl);
-    padding: var(--spacing-lg);
-    border: 1px solid var(--blueprint-line);
-    background: rgba(26, 35, 50, 0.1);
-}
-
-.response-header {
-    margin-bottom: var(--spacing-md);
-}
-
-.response-label {
-    font-family: var(--font-mono);
-    font-size: 0.8rem;
-    color: var(--blueprint-accent);
-    letter-spacing: 0.05em;
-}
-
-.response-metrics {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-md);
-}
-
-.response-metric {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: var(--spacing-sm);
-    border: 1px solid var(--blueprint-line);
-    background: rgba(232, 244, 248, 0.05);
-}
-
-.metric-time {
-    font-family: var(--font-mono);
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--blueprint-accent);
-    margin-bottom: var(--spacing-xs);
-}
-
-.metric-desc {
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    color: var(--blueprint-text-secondary);
-    text-align: center;
-    letter-spacing: 0.05em;
 }
 
 /* Enhanced Contact Form */
-.contact-form-container {
-    position: relative;
-}
-
-.form-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: var(--spacing-lg);
-    padding-bottom: var(--spacing-sm);
-    border-bottom: 1px solid var(--blueprint-line);
-}
-
-.form-title {
-    font-family: var(--font-mono);
-    font-size: 1.1rem;
-    color: var(--blueprint-accent);
-    letter-spacing: 0.05em;
-}
-
-.form-status {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-xs);
-}
-
-.status-dot {
-    width: 6px;
-    height: 6px;
-    background: var(--blueprint-success);
-    border-radius: 50%;
-    animation: statusPulse 2s ease-in-out infinite;
-}
-
-.form-status .status-text {
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    color: var(--blueprint-success);
-    letter-spacing: 0.05em;
-}
-
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -1448,22 +1296,6 @@ body {
     font-size: 0.8rem;
     color: var(--blueprint-text-secondary);
     letter-spacing: 0.05em;
-    position: relative;
-}
-
-.form-label::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background: var(--blueprint-accent);
-    transition: width 0.3s ease;
-}
-
-.form-group:focus-within .form-label::after {
-    width: 100%;
 }
 
 .form-input,
@@ -1474,54 +1306,43 @@ body {
     background: rgba(26, 35, 50, 0.1);
     color: var(--blueprint-text);
     transition: var(--transition-normal);
-    position: relative;
-}
-
-.form-input::placeholder,
-.form-textarea::placeholder {
-    color: var(--blueprint-text-secondary);
-    opacity: 0.7;
 }
 
 .form-input:focus,
 .form-textarea:focus {
     outline: none;
-    border: 2px solid var(--blueprint-accent);
+    border-color: var(--blueprint-accent);
     background: rgba(26, 35, 50, 0.2);
     box-shadow: 0 0 10px var(--blueprint-glow);
-    transform: translateY(-1px);
 }
 
 .form-input.invalid,
 .form-textarea.invalid {
-    border: 2px solid var(--blueprint-warning);
+    border-color: var(--blueprint-warning);
     box-shadow: 0 0 10px rgba(255, 107, 53, 0.3);
 }
 
 .form-input.valid,
 .form-textarea.valid {
-    border: 2px solid var(--blueprint-success);
+    border-color: var(--blueprint-success);
     box-shadow: 0 0 10px rgba(74, 222, 128, 0.3);
 }
 
 .form-validation {
     font-family: var(--font-mono);
     font-size: 0.7rem;
-    min-height: 1.2rem;
+    min-height: 16px;
     display: flex;
     align-items: center;
     gap: var(--spacing-xs);
-    transition: all 0.3s ease;
 }
 
 .form-validation.error {
     color: var(--blueprint-warning);
-    transform: translateX(5px);
 }
 
 .form-validation.success {
     color: var(--blueprint-success);
-    transform: translateX(5px);
 }
 
 .form-validation::before {
@@ -1530,59 +1351,19 @@ body {
     height: 12px;
     border-radius: 50%;
     display: inline-block;
-    transition: all 0.3s ease;
 }
 
 .form-validation.error::before {
     background: var(--blueprint-warning);
-    animation: errorPulse 0.5s ease-out;
 }
 
 .form-validation.success::before {
     background: var(--blueprint-success);
-    animation: successPulse 0.5s ease-out;
-}
-
-@keyframes errorPulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1); }
-}
-
-@keyframes successPulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1); }
 }
 
 .form-textarea {
     resize: vertical;
     min-height: 120px;
-    font-family: var(--font-sans);
-}
-
-/* Form Footer */
-.form-footer {
-    margin-bottom: var(--spacing-md);
-}
-
-.form-info {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-xs);
-}
-
-.info-text {
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    color: var(--blueprint-text-secondary);
-    letter-spacing: 0.05em;
-}
-
-.info-text::before {
-    content: '🔒';
-    margin-right: var(--spacing-xs);
-    filter: grayscale(1) brightness(1.2);
 }
 
 .transmission-animation {
@@ -1598,11 +1379,6 @@ body {
 
 .btn-blueprint.transmitting .transmission-animation {
     animation: transmit 1s ease-out;
-}
-
-.btn-blueprint.primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 20px var(--blueprint-glow);
 }
 
 @keyframes transmit {
