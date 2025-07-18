@@ -12,7 +12,8 @@ const allProjects = [
         featured: false,
         objectives: ["Convert images into sketches", "Optimize processing speed", "Maintain image quality"],
         outcomes: ["90% accuracy in sketch rendering", "30% optimization in processing speed", "Real-time processing capability"],
-        metrics: { accuracy: "90%", enhancement: "85%", speed: "30%" }
+        metrics: { accuracy: "90%", enhancement: "85%", speed: "30%" },
+        architecture: ["INPUT IMAGE", "CNN ENCODER", "GAN GENERATOR", "SKETCH OUTPUT"]
     },
     {
         id: "endoscopy-enhancement",
@@ -26,7 +27,8 @@ const allProjects = [
         featured: true,
         objectives: ["Enhance endoscopic image quality", "Improve diagnostic accuracy", "Reduce noise and artifacts"],
         outcomes: ["Improved image clarity by 40%", "Enhanced diagnostic capabilities", "Reduced processing time"],
-        metrics: { psnr: "IMPROVED", ssim: "ENHANCED", clarity: "SIGNIFICANT" }
+        metrics: { psnr: "IMPROVED", ssim: "ENHANCED", clarity: "SIGNIFICANT" },
+        architecture: ["ENDOSCOPY IMAGE", "PREPROCESSING", "DL ENHANCEMENT", "ENHANCED OUTPUT"]
     },
     {
         id: "digit-classifier",
@@ -40,7 +42,8 @@ const allProjects = [
         featured: false,
         objectives: ["Classify handwritten digits", "Create web interface", "Implement real-time prediction"],
         outcomes: ["99% accuracy on test dataset", "Real-time digit recognition", "User-friendly web interface"],
-        metrics: { accuracy: "99%", speed: "REAL-TIME", interface: "MODERN" }
+        metrics: { accuracy: "99%", speed: "REAL-TIME", interface: "MODERN" },
+        architecture: ["WEB UI", "FASTAPI", "TENSORFLOW", "CLASSIFICATION"]
     },
     {
         id: "bolt-research-hub",
@@ -54,7 +57,8 @@ const allProjects = [
         featured: true,
         objectives: ["Create collaborative workspace", "Integrate AI capabilities", "Enable real-time collaboration"],
         outcomes: ["Seamless team collaboration", "AI-powered research assistance", "Real-time document editing"],
-        metrics: { collaboration: "REAL-TIME", ai: "INTEGRATED", performance: "OPTIMIZED" }
+        metrics: { collaboration: "REAL-TIME", ai: "INTEGRATED", performance: "OPTIMIZED" },
+        architecture: ["REACT CLIENT", "NODE.JS API", "AI SERVICES", "WEBSOCKET"]
     },
     {
         id: "artify-ai",
@@ -68,7 +72,8 @@ const allProjects = [
         featured: false,
         objectives: ["Transform photos to oil paintings", "Preserve artistic quality", "Optimize processing speed"],
         outcomes: ["High-quality artistic transformations", "Fast processing pipeline", "Multiple artistic styles"],
-        metrics: { quality: "HIGH", styles: "MULTIPLE", speed: "OPTIMIZED" }
+        metrics: { quality: "HIGH", styles: "MULTIPLE", speed: "OPTIMIZED" },
+        architecture: ["INPUT IMAGE", "NST MODEL", "STYLE TRANSFER", "ARTISTIC OUTPUT"]
     },
     {
         id: "ml-notebook",
@@ -82,7 +87,8 @@ const allProjects = [
         featured: false,
         objectives: ["Create ML education platform", "Enable interactive learning", "Provide model comparison tools"],
         outcomes: ["Interactive learning experience", "Dynamic model comparison", "Real-time parameter adjustment"],
-        metrics: { engagement: "HIGH", interactivity: "REAL-TIME", comparison: "DYNAMIC" }
+        metrics: { engagement: "HIGH", interactivity: "REAL-TIME", comparison: "DYNAMIC" },
+        architecture: ["USER INTERFACE", "ML ALGORITHMS", "VISUALIZATION", "COMPARISON"]
     },
     {
         id: "web-dev-projects",
@@ -96,7 +102,8 @@ const allProjects = [
         featured: false,
         objectives: ["Create diverse web projects", "Showcase frontend skills", "Implement responsive designs"],
         outcomes: ["100 completed projects", "Modern UI/UX patterns", "Cross-browser compatibility"],
-        metrics: { projects: "100", compatibility: "CROSS-BROWSER", design: "RESPONSIVE" }
+        metrics: { projects: "100", compatibility: "CROSS-BROWSER", design: "RESPONSIVE" },
+        architecture: ["HTML/CSS", "JAVASCRIPT", "FRAMEWORKS", "BROWSER RENDER"]
     },
     {
         id: "quantumpdf-chatapp",
@@ -110,7 +117,8 @@ const allProjects = [
         featured: true,
         objectives: ["Enable intelligent, context-aware Q&A on PDF documents", "Support fast, private client-side PDF processing", "Integrate multiple AI/LLM providers", "Optimize document chunking for relevance and speed"],
         outcomes: ["Accurate retrieval and summarization of PDF content via chat", "Fast PDF upload and analysis with privacy guarantees", "Flexible AI provider integration", "Improved search quality and response relevance"],
-        metrics: { accuracy: "HIGH", providers: "20+", processing: "CLIENT-SIDE" }
+        metrics: { accuracy: "HIGH", providers: "20+", processing: "CLIENT-SIDE" },
+        architecture: ["PDF INPUT", "RAG ENGINE", "VECTOR DB", "LLM API", "CHAT OUTPUT"]
     },
     {
         id: "data-notebook",
@@ -124,7 +132,8 @@ const allProjects = [
         featured: true,
         objectives: ["Enable users to create, organize, and share interactive analysis notebooks", "Provide rich text editing and code execution within notebooks", "Support data import from CSV, Excel, JSON, and SQL sources", "Offer built-in data cleaning, transformation, and feature engineering tools", "Deliver stunning visualizations and interactive dashboards", "Ensure responsive design and theme support"],
         outcomes: ["Intuitive notebook interface for data analysis", "Interactive data visualization features", "Code editor with syntax highlighting and autocompletion", "Support for multiple data import/export formats", "Modern, responsive UI with dark/light mode", "High performance and best practices (Lighthouse scores: Performance 95+, Accessibility 100, Best Practices 95+, SEO 100)"],
-        metrics: { performance: "95+", accessibility: "100", practices: "95+" }
+        metrics: { performance: "95+", accessibility: "100", practices: "95+" },
+        architecture: ["DATA SOURCE", "NOTEBOOK UI", "ANALYSIS ENGINE", "VISUALIZATION"]
     },
     {
         id: "promptforger",
@@ -138,7 +147,8 @@ const allProjects = [
         featured: true,
         objectives: ["Enable multi-platform AI prompt support", "Provide real-time prompt analysis and complexity scoring", "Facilitate system and normal prompt modes", "Safe API key storage and management", "Deliver instant optimization suggestions", "Track and display performance metrics (token count, quality, improvement)"],
         outcomes: ["Improved response quality by up to 45%", "Reduced token usage by up to 23%", "Enhanced task completion and user satisfaction metrics", "Provided actionable, structured prompt templates for business and technical use cases", "Enabled domain specialization and persona-based prompt generation"],
-        metrics: { quality: "45%", tokens: "23%", satisfaction: "HIGH" }
+        metrics: { quality: "45%", tokens: "23%", satisfaction: "HIGH" },
+        architecture: ["USER INPUT", "PROMPT ENGINE", "AI ANALYSIS", "OPTIMIZED OUTPUT"]
     },
     {
         id: "chefspeak",
@@ -152,7 +162,8 @@ const allProjects = [
         featured: true,
         objectives: ["Enable hands-free AI-powered cooking using natural language voice commands", "Integrate shopping list creation and management via voice", "Provide full recipe narration with high-quality AI voices", "Support multi-language experience across UI and voice recognition", "Facilitate meal planning and dietary preference handling", "Offer mobile-first, offline-capable PWA experience"],
         outcomes: ["Revolutionary voice interaction for cooking and shopping tasks", "Voice-controlled smart shopping lists with ingredient detection", "Professional recipe narration supporting 5 languages", "Accurate context retention for multi-turn conversations", "Enhanced accessibility and mobile UX for all users", "Performance optimizations for real-time voice response (<500ms)"],
-        metrics: { languages: "5", response: "<500ms", accessibility: "ENHANCED" }
+        metrics: { languages: "5", response: "<500ms", accessibility: "ENHANCED" },
+        architecture: ["VOICE INPUT", "PWA CLIENT", "AI SERVICES", "VOICE OUTPUT"]
     },
     {
         id: "portfolio-nexus",
@@ -166,7 +177,8 @@ const allProjects = [
         featured: false,
         objectives: ["Create an interactive portfolio showcase", "Implement real-time data synchronization", "Design a modern UI with dark theme", "Add advanced filtering and search capabilities"],
         outcomes: ["Developed a responsive portfolio website", "Implemented automatic updates every 30 seconds", "Created a dark theme with glassmorphism effects", "Added smart search with auto-suggestions", "Integrated rating-based filtering system"],
-        metrics: { updates: "30s", theme: "DARK", search: "SMART" }
+        metrics: { updates: "30s", theme: "DARK", search: "SMART" },
+        architecture: ["GIT REPO", "DATA SYNC", "WEB APP", "USER VIEW"]
     }
 ];
 
@@ -206,9 +218,16 @@ document.addEventListener('DOMContentLoaded', function() {
         projectDiv.setAttribute('data-skills', project.technologies.join(',').toLowerCase());
         
         // Generate schematic diagram based on project
-        const inputNode = project.title.split(' ')[0].toUpperCase();
-        const processNode = project.category.toUpperCase();
-        const outputNode = project.title.split(' ').pop().toUpperCase();
+        const architectureNodes = project.architecture || ["INPUT", "PROCESS", "OUTPUT"];
+        
+        // Create architecture diagram HTML
+        let diagramHTML = '';
+        architectureNodes.forEach((node, index) => {
+            diagramHTML += `<div class="diagram-node">${node}</div>`;
+            if (index < architectureNodes.length - 1) {
+                diagramHTML += `<div class="diagram-connection"></div>`;
+            }
+        });
         
         // Determine project status
         let status = 'COMPLETED';
@@ -249,11 +268,7 @@ document.addEventListener('DOMContentLoaded', function() {
         projectDiv.innerHTML = `
             <div class="project-thumbnail">
                 <div class="schematic-diagram">
-                    <div class="diagram-node input">${inputNode}</div>
-                    <div class="diagram-connection"></div>
-                    <div class="diagram-node process">${processNode}</div>
-                    <div class="diagram-connection"></div>
-                    <div class="diagram-node output">${outputNode}</div>
+                    ${diagramHTML}
                 </div>
             </div>
             <div class="project-header">
