@@ -10,6 +10,7 @@ const allProjects = [
         category: "Deep Learning",
         project_date: "April 2025",
         featured: false,
+        architecture: ["Input Image", "CNN Feature Extractor", "GAN Generator", "Autoencoder", "Sketch Output"],
         objectives: ["Convert images into sketches", "Optimize processing speed", "Maintain image quality"],
         outcomes: ["90% accuracy in sketch rendering", "30% optimization in processing speed", "Real-time processing capability"],
         metrics: { accuracy: "90%", enhancement: "85%", speed: "30%" }
@@ -24,6 +25,7 @@ const allProjects = [
         category: "Deep Learning",
         project_date: "May 2025",
         featured: true,
+        architecture: ["Medical Image Input", "Preprocessing Pipeline", "Enhancement Model", "Quality Assessment", "Enhanced Output"],
         objectives: ["Enhance endoscopic image quality", "Improve diagnostic accuracy", "Reduce noise and artifacts"],
         outcomes: ["Improved image clarity by 40%", "Enhanced diagnostic capabilities", "Reduced processing time"],
         metrics: { psnr: "IMPROVED", ssim: "ENHANCED", clarity: "SIGNIFICANT" }
@@ -38,6 +40,7 @@ const allProjects = [
         category: "Deep Learning",
         project_date: "May 2025",
         featured: false,
+        architecture: ["Next.js Frontend", "FastAPI Backend", "TensorFlow Model", "Classification Result"],
         objectives: ["Classify handwritten digits", "Create web interface", "Implement real-time prediction"],
         outcomes: ["99% accuracy on test dataset", "Real-time digit recognition", "User-friendly web interface"],
         metrics: { accuracy: "99%", speed: "REAL-TIME", interface: "MODERN" }
@@ -52,6 +55,7 @@ const allProjects = [
         category: "Web Development",
         project_date: "July 2025",
         featured: true,
+        architecture: ["React Frontend", "Node.js Backend", "AI Services", "WebSocket", "Database"],
         objectives: ["Create collaborative workspace", "Integrate AI capabilities", "Enable real-time collaboration"],
         outcomes: ["Seamless team collaboration", "AI-powered research assistance", "Real-time document editing"],
         metrics: { collaboration: "REAL-TIME", ai: "INTEGRATED", performance: "OPTIMIZED" }
@@ -66,6 +70,7 @@ const allProjects = [
         category: "Deep Learning",
         project_date: "February 2025",
         featured: false,
+        architecture: ["Content Image", "Style Image", "NST Model", "Style Transfer", "Artistic Output"],
         objectives: ["Transform photos to oil paintings", "Preserve artistic quality", "Optimize processing speed"],
         outcomes: ["High-quality artistic transformations", "Fast processing pipeline", "Multiple artistic styles"],
         metrics: { quality: "HIGH", styles: "MULTIPLE", speed: "OPTIMIZED" }
@@ -80,6 +85,7 @@ const allProjects = [
         category: "Machine Learning",
         project_date: "May 2025",
         featured: false,
+        architecture: ["User Interface", "ML Algorithms", "Parameter Engine", "Visualization", "Comparison Tool"],
         objectives: ["Create ML education platform", "Enable interactive learning", "Provide model comparison tools"],
         outcomes: ["Interactive learning experience", "Dynamic model comparison", "Real-time parameter adjustment"],
         metrics: { engagement: "HIGH", interactivity: "REAL-TIME", comparison: "DYNAMIC" }
@@ -94,6 +100,7 @@ const allProjects = [
         category: "Web Development",
         project_date: "March 2023",
         featured: false,
+        architecture: ["Project Gallery", "Frontend Frameworks", "Interactive Components", "Responsive Design"],
         objectives: ["Create diverse web projects", "Showcase frontend skills", "Implement responsive designs"],
         outcomes: ["100 completed projects", "Modern UI/UX patterns", "Cross-browser compatibility"],
         metrics: { projects: "100", compatibility: "CROSS-BROWSER", design: "RESPONSIVE" }
@@ -108,6 +115,7 @@ const allProjects = [
         category: "Deep Learning",
         project_date: "June 2025",
         featured: true,
+        architecture: ["PDF Input", "Document Chunking", "Vector Database", "RAG Engine", "LLM APIs", "Chat Interface"],
         objectives: ["Enable intelligent, context-aware Q&A on PDF documents", "Support fast, private client-side PDF processing", "Integrate multiple AI/LLM providers", "Optimize document chunking for relevance and speed"],
         outcomes: ["Accurate retrieval and summarization of PDF content via chat", "Fast PDF upload and analysis with privacy guarantees", "Flexible AI provider integration", "Improved search quality and response relevance"],
         metrics: { accuracy: "HIGH", providers: "20+", processing: "CLIENT-SIDE" }
@@ -122,6 +130,7 @@ const allProjects = [
         category: "Web Development",
         project_date: "April 2025",
         featured: true,
+        architecture: ["Data Import", "Notebook Interface", "Analysis Engine", "Visualization", "Export System"],
         objectives: ["Enable users to create, organize, and share interactive analysis notebooks", "Provide rich text editing and code execution within notebooks", "Support data import from CSV, Excel, JSON, and SQL sources", "Offer built-in data cleaning, transformation, and feature engineering tools", "Deliver stunning visualizations and interactive dashboards", "Ensure responsive design and theme support"],
         outcomes: ["Intuitive notebook interface for data analysis", "Interactive data visualization features", "Code editor with syntax highlighting and autocompletion", "Support for multiple data import/export formats", "Modern, responsive UI with dark/light mode", "High performance and best practices (Lighthouse scores: Performance 95+, Accessibility 100, Best Practices 95+, SEO 100)"],
         metrics: { performance: "95+", accessibility: "100", practices: "95+" }
@@ -136,6 +145,7 @@ const allProjects = [
         category: "Web Development",
         project_date: "July 2025",
         featured: true,
+        architecture: ["Prompt Input", "Analysis Engine", "Optimization AI", "Performance Metrics", "Enhanced Output"],
         objectives: ["Enable multi-platform AI prompt support", "Provide real-time prompt analysis and complexity scoring", "Facilitate system and normal prompt modes", "Safe API key storage and management", "Deliver instant optimization suggestions", "Track and display performance metrics (token count, quality, improvement)"],
         outcomes: ["Improved response quality by up to 45%", "Reduced token usage by up to 23%", "Enhanced task completion and user satisfaction metrics", "Provided actionable, structured prompt templates for business and technical use cases", "Enabled domain specialization and persona-based prompt generation"],
         metrics: { quality: "45%", tokens: "23%", satisfaction: "HIGH" }
@@ -150,6 +160,7 @@ const allProjects = [
         category: "Web Development",
         project_date: "June 2025",
         featured: true,
+        architecture: ["Voice Input", "Speech Recognition", "Recipe API", "AI Processing", "Voice Synthesis", "Audio Output"],
         objectives: ["Enable hands-free AI-powered cooking using natural language voice commands", "Integrate shopping list creation and management via voice", "Provide full recipe narration with high-quality AI voices", "Support multi-language experience across UI and voice recognition", "Facilitate meal planning and dietary preference handling", "Offer mobile-first, offline-capable PWA experience"],
         outcomes: ["Revolutionary voice interaction for cooking and shopping tasks", "Voice-controlled smart shopping lists with ingredient detection", "Professional recipe narration supporting 5 languages", "Accurate context retention for multi-turn conversations", "Enhanced accessibility and mobile UX for all users", "Performance optimizations for real-time voice response (<500ms)"],
         metrics: { languages: "5", response: "<500ms", accessibility: "ENHANCED" }
@@ -164,6 +175,7 @@ const allProjects = [
         category: "Web Development",
         project_date: "July 2025",
         featured: false,
+        architecture: ["Git Repository", "Data Sync Engine", "Web Interface", "Search System", "Portfolio Display"],
         objectives: ["Create an interactive portfolio showcase", "Implement real-time data synchronization", "Design a modern UI with dark theme", "Add advanced filtering and search capabilities"],
         outcomes: ["Developed a responsive portfolio website", "Implemented automatic updates every 30 seconds", "Created a dark theme with glassmorphism effects", "Added smart search with auto-suggestions", "Integrated rating-based filtering system"],
         metrics: { updates: "30s", theme: "DARK", search: "SMART" }
@@ -205,10 +217,29 @@ document.addEventListener('DOMContentLoaded', function() {
         projectDiv.className = 'project-schematic';
         projectDiv.setAttribute('data-skills', project.technologies.join(',').toLowerCase());
         
-        // Generate schematic diagram based on project
-        const inputNode = project.title.split(' ')[0].toUpperCase();
-        const processNode = project.category.toUpperCase();
-        const outputNode = project.title.split(' ').pop().toUpperCase();
+        // Generate project-specific architecture diagram
+        let architectureDiagram = '';
+        if (project.architecture && project.architecture.length > 0) {
+            architectureDiagram = project.architecture.map((node, index) => {
+                const isLast = index === project.architecture.length - 1;
+                return `
+                    <div class="diagram-node">${node.toUpperCase()}</div>
+                    ${!isLast ? '<div class="diagram-connection"></div>' : ''}
+                `;
+            }).join('');
+        } else {
+            // Fallback to generic diagram if no architecture is defined
+            const inputNode = project.title.split(' ')[0].toUpperCase();
+            const processNode = project.category.toUpperCase();
+            const outputNode = project.title.split(' ').pop().toUpperCase();
+            architectureDiagram = `
+                <div class="diagram-node input">${inputNode}</div>
+                <div class="diagram-connection"></div>
+                <div class="diagram-node process">${processNode}</div>
+                <div class="diagram-connection"></div>
+                <div class="diagram-node output">${outputNode}</div>
+            `;
+        }
         
         // Determine project status
         let status = 'COMPLETED';
@@ -249,11 +280,7 @@ document.addEventListener('DOMContentLoaded', function() {
         projectDiv.innerHTML = `
             <div class="project-thumbnail">
                 <div class="schematic-diagram">
-                    <div class="diagram-node input">${inputNode}</div>
-                    <div class="diagram-connection"></div>
-                    <div class="diagram-node process">${processNode}</div>
-                    <div class="diagram-connection"></div>
-                    <div class="diagram-node output">${outputNode}</div>
+                    ${architectureDiagram}
                 </div>
             </div>
             <div class="project-header">
