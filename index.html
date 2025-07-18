@@ -7,6 +7,7 @@
     <meta name="description" content="AI/ML Engineer and Data Analyst specializing in deep learning, computer vision, and innovative solutions">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid-skills.css">
 </head>
 <body>
     <!-- Loading Screen -->
@@ -96,7 +97,7 @@
                             </div>
                             <div class="status-item">
                                 <span class="status-label">LAST UPDATED:</span>
-                                <span class="status-value" id="lastUpdated">JAN 2025</span>
+                                <span class="status-value" id="lastUpdated">JULY 2025</span>
                             </div>
                         </div>
                         
@@ -109,7 +110,7 @@
                     <div class="hero-diagram">
                         <div class="profile-schematic">
                             <div class="profile-frame">
-                                <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop" alt="Kedhareswer Naidu" class="profile-image">
+                                <img src="me.jpeg" alt="Kedhareswer Naidu" class="profile-image">
                                 <div class="frame-corners">
                                     <div class="corner top-left"></div>
                                     <div class="corner top-right"></div>
@@ -153,9 +154,8 @@
                 <div class="blueprint-line horizontal"></div>
             </div>
             
-            <div class="skills-matrix" id="skillsMatrix">
-                <div class="matrix-connections"></div>
-                
+            <div class="skills-grid-container">
+                <!-- First column, first row: Programming Languages -->                
                 <div class="spec-category" data-category="languages">
                     <h3 class="category-title">PROGRAMMING LANGUAGES</h3>
                     <div class="spec-items">
@@ -198,6 +198,7 @@
                     </div>
                 </div>
                 
+                <!-- First column, second row: AI/ML Frameworks -->
                 <div class="spec-category" data-category="frameworks">
                     <h3 class="category-title">AI/ML FRAMEWORKS</h3>
                     <div class="spec-items">
@@ -240,6 +241,7 @@
                     </div>
                 </div>
                 
+                <!-- Second column, first row: Tools & Platforms -->
                 <div class="spec-category" data-category="tools">
                     <h3 class="category-title">TOOLS & PLATFORMS</h3>
                     <div class="spec-items">
@@ -291,6 +293,7 @@
                     </div>
                 </div>
                 
+                <!-- Second column, second row: AI Development Tools -->
                 <div class="spec-category" data-category="ai-tools">
                     <h3 class="category-title">AI DEVELOPMENT TOOLS</h3>
                     <div class="spec-items">
@@ -376,27 +379,33 @@
             </div>
             
             <div class="projects-grid">
-                <div class="project-schematic" data-skills="tensorflow,python,dl,cv">
+                <div class="project-schematic" data-skills="nextjs,react,ai,rag,vector-db">
                     <div class="project-thumbnail">
                         <div class="schematic-diagram">
-                            <div class="diagram-node input">INPUT</div>
+                            <div class="diagram-node input">PDF</div>
                             <div class="diagram-connection"></div>
-                            <div class="diagram-node process">CNN</div>
+                            <div class="diagram-node process">RAG</div>
                             <div class="diagram-connection"></div>
-                            <div class="diagram-node output">OUTPUT</div>
+                            <div class="diagram-node output">AI CHAT</div>
                         </div>
                     </div>
                     <div class="project-header">
                         <h3 class="project-title">QUANTUMPDF CHATAPP</h3>
-                        <div class="project-status">DEPLOYED</div>
+                        <div class="project-status">ACTIVE</div>
                     </div>
                     <div class="project-timeline">
-                        <span class="timeline-label">TIMELINE:</span>
-                        <span class="timeline-value">FEB 2025 - JUN 2025</span>
+                        <span class="timeline-label">TECH STACK:</span>
+                        <span class="timeline-value">Next.js 15, React 19, VectorDB</span>
                     </div>
                     
                     <div class="project-description">
-                        <p>Advanced deep learning model utilizing CUHK Face Sketch Database, achieving 85% quality enhancement through CNN architecture in TensorFlow. Integrated GANs and Autoencoders for 90% accuracy optimization.</p>
+                        <p>Intelligent PDF chat application using Retrieval-Augmented Generation (RAG) to enable natural language conversations with documents. Features client-side PDF processing, multi-phase RAG, and support for 20+ AI providers. Built with Next.js 15 and React 19 for optimal performance and user experience.</p>
+                        <p class="project-features">
+                            <span class="feature-tag">Vector Search</span>
+                            <span class="feature-tag">PDF Processing</span>
+                            <span class="feature-tag">AI Integration</span>
+                            <span class="feature-tag">Real-time Chat</span>
+                        </p>
                     </div>
                     
                     <div class="project-specs">

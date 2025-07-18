@@ -1,0 +1,18 @@
+/* Grid layout for skills matrix */
+.skills-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-3xl);
+}
+
+/* Ensure existing skill styles work with grid layout */
+.skills-grid-container .spec-category {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .skills-grid-container {
+        grid-template-columns: 1fr;
+    }
+}
